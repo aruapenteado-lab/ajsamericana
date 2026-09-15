@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJS Americana | Grupos Juvenis Salesianos</title>
+<meta name="description" content="Conheça os grupos juvenis, eventos, calendário e a história da Articulação da Juventude Salesiana de Americana.">
+<link rel="canonical" href="https://ajsamericana.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="AJS Americana | Grupos Juvenis Salesianos">
+<meta property="og:description" content="Conheça os grupos juvenis, eventos, calendário e a história da Articulação da Juventude Salesiana de Americana.">
+<meta property="og:image" content="./logo-ajs.png">
+<meta property="og:url" content="https://ajsamericana.com.br/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="./favicon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="./favicon.png">
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome (ícones sociais) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="./style.css">
+
+<!-- Dados estruturados (apenas informações confirmadas) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Articulação da Juventude Salesiana de Americana",
+  "alternateName": "AJS Americana",
+  "url": "https://ajsamericana.com.br/",
+  "logo": "./logo-ajs.png",
+  "sameAs": [
+    "https://www.instagram.com/ajsamericana/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<noscript>
+  <div class="noscript-banner">Este site funciona sem JavaScript, mas o menu móvel, o calendário e as animações precisam dele ativado para a melhor experiência.</div>
+</noscript>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== CABEÇALHO ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#topo" class="brand">
+      <img src="./logo-ajs.png" alt="Logotipo da AJS Americana" width="42" height="42">
+      <span>AJS Americana</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#grupos" data-nav-link>Grupos</a></li>
+        <li><a href="#eventos" data-nav-link>Eventos</a></li>
+        <li><a href="#calendario" data-nav-link>Calendário</a></li>
+        <li><a href="#historia" data-nav-link>História</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMobile" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegação móvel">
+    <ul>
+      <li><a href="#grupos" data-nav-link>Grupos</a></li>
+      <li><a href="#eventos" data-nav-link>Eventos</a></li>
+      <li><a href="#calendario" data-nav-link>Calendário</a></li>
+      <li><a href="#historia" data-nav-link>História</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo">
+<div id="topo"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge"><span class="dot"></span> AJS AMERICANA</span>
+        <h1 class="hero-title">Um lugar para viver a fé, criar amizades e fazer a diferença.</h1>
+        <p class="hero-desc">Conheça os grupos juvenis da presença salesiana de Americana, participe dos nossos encontros e descubra uma juventude que caminha unida com alegria, fé e espírito salesiano.</p>
+        <div class="hero-actions">
+          <a href="#grupos" class="btn btn-primary">Conheça nossos grupos</a>
+          <a href="#eventos" class="btn btn-outline-dark">Veja os próximos eventos</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="image-frame">
+          <img src="./images/hero-ajs.webp" alt="Jovens da AJS Americana reunidos em um encontro" width="1600" height="1200" fetchpriority="high">
+        </div>
+        <svg class="hero-rays" viewBox="0 0 200 200" aria-hidden="true">
+          <g stroke-linecap="round" fill="none" stroke-width="14">
+            <path d="M100 190 L60 40" stroke="var(--color-green)" opacity="0.85"/>
+            <path d="M100 190 L85 20" stroke="var(--color-gray)" opacity="0.85"/>
+            <path d="M100 190 L110 15" stroke="var(--color-secondary)" opacity="0.85"/>
+            <path d="M100 190 L135 25" stroke="var(--color-accent)" opacity="0.85"/>
+            <path d="M100 190 L155 55" stroke="var(--color-primary)" opacity="0.85"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GRUPOS ===================== -->
+  <section id="grupos" class="groups-section">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <span class="eyebrow">Grupos</span>
+        <h2 class="section-title">Encontre o seu grupo</h2>
+        <p class="section-desc">Na AJS Americana, cada jovem pode encontrar um espaço para crescer na fé, construir amizades e participar ativamente da comunidade. Conheça nossos grupos juvenis.</p>
+      </div>
+
+      <div class="groups-grid" id="groupsGrid" data-animate>
+        <!-- Cards renderizados dinamicamente via script.js a partir de "groups" -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EVENTOS ===================== -->
+  <section id="eventos" class="events-section">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <span class="eyebrow">Eventos</span>
+        <h2 class="section-title">Próximos encontros e eventos</h2>
+        <p class="section-desc">Confira o que vem por aí e venha viver esses momentos com a gente.</p>
+      </div>
+
+      <div id="eventFeatured"></div>
+      <div class="events-list" id="eventsList"></div>
+      <div class="events-empty" id="eventsEmpty" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v3M16 2v3M3.5 8.5h17M4 5h16a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"/></svg>
+        <p>Novos encontros estão sendo preparados. Acompanhe a AJS Americana para não perder nenhuma novidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CALENDÁRIO ===================== -->
+  <section id="calendario" class="calendar-section">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <span class="eyebrow">Calendário</span>
+        <h2 class="section-title">Calendário da AJS</h2>
+        <p class="section-desc">Organize-se para participar dos nossos encontros, celebrações e momentos especiais.</p>
+      </div>
+
+      <div class="calendar-wrap" data-animate>
+        <div class="calendar-card">
+          <div class="calendar-head">
+            <h3 id="calendarMonthLabel">Mês</h3>
+            <div class="calendar-nav">
+              <button type="button" id="prevMonth" aria-label="Mês anterior">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button type="button" id="nextMonth" aria-label="Próximo mês">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+          </div>
+          <div class="calendar-grid" id="calendarGrid" role="grid" aria-label="Dias do mês"></div>
+
+          <ul class="calendar-legend">
+            <li><span class="legend-dot today"></span> Hoje</li>
+            <li><span class="legend-dot event"></span> Dia com evento</li>
+          </ul>
+        </div>
+
+        <div class="agenda-card">
+          <h3 id="agendaTitle">Agenda do mês</h3>
+          <div class="agenda-list" id="agendaList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HISTÓRIA ===================== -->
+  <section id="historia" class="history-section">
+    <div class="container">
+      <div class="history-grid">
+        <div class="history-media" data-animate>
+          <div class="image-frame">
+            <img src="./images/historia/historia-1.webp" alt="Jovens participando de uma atividade da AJS Americana" width="1000" height="800" loading="lazy">
+          </div>
+          <div class="image-frame">
+            <img src="./images/historia/historia-2.webp" alt="Encontro de jovens da presença salesiana de Americana" width="1000" height="800" loading="lazy">
+          </div>
+        </div>
+
+        <div class="history-content">
+          <div class="section-head" data-animate>
+            <span class="eyebrow">História</span>
+            <h2 class="section-title">Nossa história</h2>
+          </div>
+
+          <div class="history-blocks">
+            <div class="history-block" data-animate>
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2C7 2 3 6 3 11c0 5 5 9 9 11 4-2 9-6 9-11 0-5-4-9-9-9z"/></svg> O que é a AJS</h3>
+              <p>A Articulação da Juventude Salesiana (AJS) é um movimento que se propõe a unir jovens de diferentes realidades, oferecendo um espaço acolhedor e dinâmico dentro da presença salesiana de Americana.</p>
+            </div>
+
+            <div class="history-block" data-animate>
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c1.9 0 3.3 1 4 2.2C11.2 6 12.6 5 14.5 5 18 5 20.5 8.5 18.5 12.5 16 16.65 12 21 12 21z"/></svg> Espiritualidade juvenil salesiana</h3>
+              <p>Com um forte compromisso voltado à evangelização e à formação integral, a AJS busca facilitar o envolvimento ativo dos jovens na sociedade, promovendo valores cristãos e o espírito de Dom Bosco.</p>
+            </div>
+
+            <div class="history-block" data-animate>
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Protagonismo juvenil</h3>
+              <p>Os próprios jovens são convidados a construir e conduzir os grupos, projetos e ações de voluntariado, vivendo a fé de forma ativa e participativa dentro da comunidade.</p>
+            </div>
+
+            <div class="history-block" data-animate>
+              <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12l2-2 4 4 8-8 2 2-10 10z"/></svg> Nossa missão em Americana</h3>
+              <p>Unir adolescentes e jovens em torno da formação, de eventos sociais e de ações de voluntariado, mantendo viva a tradição salesiana de acolhimento, alegria e comunhão.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-section">
+    <svg class="cta-rays" viewBox="0 0 200 200" aria-hidden="true">
+      <g stroke-linecap="round" fill="none" stroke-width="16">
+        <path d="M100 195 L55 35" stroke="#508C43"/>
+        <path d="M100 195 L82 15" stroke="#C3C3C2"/>
+        <path d="M100 195 L112 12" stroke="#A32E27"/>
+        <path d="M100 195 L140 25" stroke="#D3A944"/>
+        <path d="M100 195 L162 58" stroke="#FFFFFF"/>
+      </g>
+    </svg>
+    <div class="container cta-inner">
+      <h2>Tem espaço para você nessa história</h2>
+      <p>Venha conhecer a AJS Americana, fazer novas amizades e viver uma experiência de fé, alegria e serviço. Acompanhe também nossas redes sociais e fique por dentro dos encontros, eventos e novidades.</p>
+
+      <div class="cta-actions">
+        <!-- Contato oficial ainda não confirmado: substituir # pelo link/whatsapp oficial da AJS Americana -->
+        <a href="#" class="btn btn-accent">Quero participar</a>
+
+        <div class="social-actions">
+          <a class="social-btn" href="https://www.instagram.com/ajsamericana/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da AJS Americana (abre em nova aba)">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> @ajsamericana
+          </a>
+          <!-- Confirmar identificador exato do canal antes de publicar -->
+          <a class="social-btn" href="https://www.youtube.com/@ajsamericana" target="_blank" rel="noopener noreferrer" aria-label="YouTube AJS American (abre em nova aba)">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i> AJS American
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="./logo-ajs.png" alt="Logotipo da AJS Americana" width="40" height="40" loading="lazy">
+        <span>AJS Americana</span>
+      </div>
+      <p class="footer-tagline">Articulação da Juventude Salesiana da presença salesiana de Americana.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ajsamericana/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@ajsamericana" target="_blank" rel="noopener noreferrer" aria-label="YouTube (abre em nova aba)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#grupos">Grupos</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#calendario">Calendário</a></li>
+        <li><a href="#historia">História</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <!-- Nenhum telefone, endereço ou e-mail oficial foi confirmado. Adicionar aqui quando disponível. -->
+        <li><a href="https://www.instagram.com/ajsamericana/" target="_blank" rel="noopener noreferrer">Instagram @ajsamericana</a></li>
+        <li><a href="https://www.youtube.com/@ajsamericana" target="_blank" rel="noopener noreferrer">YouTube AJS American</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>Presença Salesiana de Americana</span>
+    <span>&copy; <span id="footerYear"></span> AJS Americana — Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<!-- ===================== MODAL DE GRUPO ===================== -->
+<div class="modal-overlay" id="groupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="image-frame">
+      <img id="modalImage" src="" alt="">
+    </div>
+    <h3 id="modalTitle"></h3>
+    <ul class="group-meta" id="modalMeta"></ul>
+    <p id="modalDesc"></p>
+    <a href="#" class="btn btn-primary btn-sm" id="modalCta" target="_blank" rel="noopener noreferrer">Quero conhecer</a>
+  </div>
+</div>
+
+<!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
