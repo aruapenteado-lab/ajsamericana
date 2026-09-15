@@ -83,19 +83,28 @@
 
   // Cada evento: title, description, location, time, date (formato "YYYY-MM-DD"),
   // image (opcional) e ctaUrl (opcional, link de inscrição/detalhes).
-  // A lista começa vazia porque nenhum evento com data confirmada está
-  // disponível no momento. Assim que houver um evento oficial, adicione um
-  // objeto aqui, por exemplo:
+  // Para adicionar um novo evento, copie o modelo abaixo e ajuste os dados
+  // (não invente informações — preencha apenas com dados confirmados):
   // {
-  //   title: "Encontro de Futuros Coroinhas",
-  //   description: "Formação para quem já fez a Primeira Comunhão.",
-  //   location: "Paróquia",
-  //   time: "14h",
+  //   title: "Nome do evento",
+  //   description: "Descrição curta do evento.",
+  //   location: "Local do evento",
+  //   time: "Horário do evento",
   //   date: "2026-11-08",
   //   image: "./images/eventos/evento-exemplo.webp",
   //   ctaUrl: "#"
   // }
-  const events = [];
+  const events = [
+    {
+      title: "FEST",
+      description: "Festival da Juventude Salesiana",
+      location: "Santa Terezinha - São Paulo",
+      time: "10h até as 21h",
+      date: "2026-10-17",
+      image: "./images/eventos/evento-exemplo.webp",
+      ctaUrl: "#"
+    }
+  ];
 
   /* ------------------------------------------------------------------------
      2) UTILITÁRIOS
