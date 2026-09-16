@@ -122,7 +122,7 @@
       location: "Santa Terezinha - São Paulo",
       time: "10h até as 21h",
       date: "2026-10-17",
-      image: "./images/eventos/evento-exemplo.webp",
+      image: "./images/evento-exemplo.webp",
       ctaUrl: "#"
     }
   ];
