@@ -78,6 +78,27 @@
       description: "Grupo de jovens universitários, para quem está cursando graduação no Unisal.",
       image: "./images/grupos/pdu.webp",
       ctaUrl: "#"
+    },
+    {
+      name: "Obra Social",
+      ageRange: "14 a 17 anos",
+      schedule: "Segunda, quarta e sexta, das 16h às 18h",
+      location: "Casa Dom Bosco",
+      description: "Grupo de jovens da Obra Social, com encontros três vezes por semana na Casa Dom Bosco.",
+      image: "./images/grupos/obra-social.webp",
+      ctaUrl: "#"
+    },
+    {
+      // Grupo ainda em formação. Quando as informações forem confirmadas,
+      // preencha os campos abaixo e remova a linha "comingSoon: true".
+      name: "Pós-Crisma",
+      ageRange: "",
+      schedule: "",
+      location: "",
+      description: "",
+      image: "./images/grupos/pos-crisma.webp",
+      comingSoon: true,
+      ctaUrl: "#"
     }
   ];
 
@@ -236,16 +257,18 @@
     if (!grid) return;
 
     grid.innerHTML = groups.map((group, index) => `
-      <article class="group-card" data-group-index="${index}" data-animate>
+      <article class="group-card${group.comingSoon ? " is-coming-soon" : ""}" data-group-index="${index}" data-animate>
         <div class="group-photo">
           <img src="${group.image}" alt="Foto do grupo ${escapeHtml(group.name)}" loading="lazy" width="900" height="700">
-          <span class="group-tag">Grupo juvenil</span>
+          <span class="group-tag">${group.comingSoon ? "Em breve" : "Grupo juvenil"}</span>
         </div>
         <div class="group-body">
           <h3 class="group-name">${escapeHtml(group.name)}</h3>
-          <p class="group-desc">${escapeHtml(group.description)}</p>
+          ${group.description ? `<p class="group-desc">${escapeHtml(group.description)}</p>` : ""}
           <ul class="group-meta">${metaListHtml(group)}</ul>
-          <button type="button" class="btn btn-outline-dark btn-sm group-cta" data-open-group="${index}">Quero conhecer</button>
+          ${group.comingSoon
+            ? `<p class="group-soon-note">Grupo em formação. Em breve teremos mais informações.</p>`
+            : `<button type="button" class="btn btn-outline-dark btn-sm group-cta" data-open-group="${index}">Quero conhecer</button>`}
         </div>
       </article>
     `).join("");
@@ -285,7 +308,9 @@
     $("#modalImage").alt = "Foto do grupo " + group.name;
     $("#modalTitle").textContent = group.name;
     $("#modalMeta").innerHTML = metaListHtml(group);
-    $("#modalDesc").textContent = group.description;
+    const desc = $("#modalDesc");
+    desc.textContent = group.description || "";
+    desc.hidden = !group.description;
 
     const cta = $("#modalCta");
     if (group.ctaUrl && group.ctaUrl !== "#") {
