@@ -31,7 +31,7 @@
       schedule: "Sábados, após a missa das 14h",
       location: "",
       description: "Grupo de crianças e adolescentes que se encontram aos sábados para crescer juntos na fé e na amizade.",
-      image: "./images/grupos/perseveranca.webp",
+      image: "./images/perseveranca.webp",
       ctaUrl: "#"
     },
     {
@@ -40,7 +40,7 @@
       schedule: "Sábados às 10h",
       location: "",
       description: "Para jovens que frequentam a catequese da Crisma e para todos que buscam viver os sacramentos.",
-      image: "./images/grupos/crisma.webp",
+      image: "./images/crisma.webp",
       ctaUrl: "#"
     },
     {
@@ -49,7 +49,7 @@
       schedule: "",
       location: "Colégio Dom Bosco",
       description: "Grupo de jovens do Colégio Dom Bosco, aberto a quem está cursando o Ensino Médio na instituição.",
-      image: "./images/grupos/jms.webp",
+      image: "./images/jms.webp",
       ctaUrl: "#"
     },
     {
@@ -58,7 +58,7 @@
       schedule: "Sábados, das 13h30 às 17h",
       location: "Oratório",
       description: "Grupo de voluntariado que forma jovens líderes para servir a comunidade no Oratório.",
-      image: "./images/grupos/jovem-lider.webp",
+      image: "./images/jovem-lider.webp",
       ctaUrl: "#"
     },
     {
@@ -67,7 +67,7 @@
       schedule: "",
       location: "",
       description: "Grupo de jovens da paróquia voltado à animação missionária.",
-      image: "./images/grupos/gam.webp",
+      image: "./images/gam.webp",
       ctaUrl: "#"
     },
     {
@@ -76,7 +76,7 @@
       schedule: "",
       location: "Unisal",
       description: "Grupo de jovens universitários, para quem está cursando graduação no Unisal.",
-      image: "./images/grupos/pdu.webp",
+      image: "./images/pdu.webp",
       ctaUrl: "#"
     },
     {
@@ -85,7 +85,7 @@
       schedule: "Segunda, quarta e sexta, das 16h às 18h",
       location: "Casa Dom Bosco",
       description: "Grupo de jovens da Obra Social, com encontros três vezes por semana na Casa Dom Bosco.",
-      image: "./images/grupos/obra-social.webp",
+      image: "./images/obra-social.webp",
       ctaUrl: "#"
     },
     {
@@ -96,7 +96,7 @@
       schedule: "",
       location: "",
       description: "",
-      image: "./images/grupos/pos-crisma.webp",
+      image: "./images/pos-crisma.webp",
       comingSoon: true,
       ctaUrl: "#"
     }
