@@ -22,7 +22,7 @@
       schedule: "Encontros mensais e retiros semestrais",
       location: "",
       description: "Grupo de coroinhas e acólitos da paróquia, com formação própria oferecida pelo grupo para servir no altar.",
-      image: "./images/grupos/coroinhas-e-acolitos.webp",
+      image: "./images/coroinhas-e-acolitos.webp",
       ctaUrl: "#"
     },
     {
